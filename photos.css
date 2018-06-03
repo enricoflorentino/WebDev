@@ -1,0 +1,18 @@
+img {
+	width: 30%;
+	float: left;
+	margin: 1.66%;
+}
+
+div {
+	font-family: raleway;
+	font-size: 23px;
+	font-weight: 800;
+	margin-left: 1.66%;
+
+	border-bottom-color: #f1f1f1;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+
+	width: 30%;
+}
