@@ -1,0 +1,25 @@
+#indexcontent {
+	text-align: center;
+	padding-top: 25%;
+}
+
+html {
+	height: 100%;
+}
+body {
+	background-image: url("https://images.unsplash.com/photo-1514189214581-f5118026e4c1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ff8753cc29c3ff99aa6802338b5211f2&auto=format&fit=crop&w=1950&q=80");
+	background-size: cover;
+	background-position: top;
+	font-family: 'Patua One';
+	color: white;
+
+}
+
+h1 {
+	font-weight: 400;
+	font-size: 5em;
+}
+
+hr {
+	width: 400px;
+}

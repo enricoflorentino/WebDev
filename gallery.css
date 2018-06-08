@@ -6,3 +6,13 @@ body {
 	color: #2c3e50;
 	font-family: 'Patua One', cursive;
 }	
+
+
+.navbar-inverse {
+	background-color: #2c3e50;
+
+}
+
+.navbar a {
+	color: white;
+}
