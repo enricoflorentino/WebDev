@@ -14,6 +14,8 @@ var title = document.querySelector("#title");
 var reset = document.querySelector("#reset");
 var modeB = document.querySelectorAll(".mode");
 
+colorDisplay.textContent = pickedColor;
+
 for (var i = 0; i < modeB.length; i++) {
 	modeB[i].addEventListener("click", function() {
 		modeB[0].classList.remove("selected");
