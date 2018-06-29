@@ -17,10 +17,14 @@ $("input[type='text']").keypress(function(event)
 {
 	if(event.which === 13) {
 		var toText = $(this).val();
+		$(this).val("");
+		$("ul").append("<li><span><i class='fas fa-trash'></i></span> " + toText + "</li>");
 
-		$("ul").append("<li><span>X</span> " + toText + "</li>");
-		$(this).val() = "";
 	}
 });
 
+
+$("#toggleform").on("click", function() {
+	$("input[type='text']").fadeToggle(400);
+})
 
