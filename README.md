@@ -1,5 +1,5 @@
 # WebDev
-Learning Web Development (HTML, CSS, JS)
+Learning Web Development
 
 
 # Purpose
