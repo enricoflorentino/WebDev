@@ -20,6 +20,6 @@ app.get("/", function(req, res){
     res.render("search");
 })
 
-app.listen(process.env.PORT, process. env.IP, function() {
-    console.log("Server started");
+app.listen(3000, function(){
+    console.log("server is running");
 });
