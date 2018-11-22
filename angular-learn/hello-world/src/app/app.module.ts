@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { CourseComponent } from './course/course.component';
 import { CoursesService } from './courses.service';
 
+import { FormsModule } from '@angular/forms';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +18,8 @@ import { CoursesService } from './courses.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [CoursesService],  // instances of services
   bootstrap: [AppComponent]

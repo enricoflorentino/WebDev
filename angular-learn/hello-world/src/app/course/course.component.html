@@ -2,4 +2,9 @@
   course works!
 </p>
 
-<img src="{{ imageUrl }}" />
+<!-- <img src="{{ imageUrl }}" /> -->
+
+<button class="btn btn-primary" [class.active] = "isActive">Save</button>
+<br> <br>
+<input [(ngModel)] = "email" (keyup.enter)="whatisEmail()" > 
+
