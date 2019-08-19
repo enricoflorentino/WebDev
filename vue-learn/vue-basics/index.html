@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Vue Basics</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <style>
+            .one{
+                color: green;
+            }
+            </style>
+    </head>
+    <body>
+        
+        <h1>Vue Basics</h1>
+        <div id="app">
+            <h2>{{ title }}</h2>
+            <p> {{ greet('evening') }}</p>
+            <a v-bind:href="url" >Youtube</a>
+            <div v-bind:class="classes">Classes from Instance</div>
+            <input type="text" v-bind:value="name">
+            <br><br>
+            <p>I earn {{ wage }} pounds per hour</p>
+            <button @click="wage++">Increase wage by 1</button>
+            <button @click="wage--">Decrease wage by 1</button>
+
+            <button @dblclick="changeWage(10)">DOUBLE CLICK Increase wage by 10</button>
+            <br>
+            <br>
+            <button @click="logEvent">Log Event Info</button>
+            <br>
+            <br>
+            <p>Favorite Color: {{ favColor }}</p>
+            <input type="text" @keyup="updateColor">
+            <br>
+            <br>
+            <p>Two Way Data Binding: {{ find }}</p>
+            <br>
+            <input type="text" v-model="find">
+            <br>
+            <br>
+            <button @click.alt="logMessage">alt-click</button>
+            <br>
+            <br>
+            <a href="https://www.google.com" @click.prevent="logMessage"></a>
+            <br>
+            <br>
+            <h5 v-if="showName">secret</h5>
+            <button @click="showToggle">Show secret</button>
+        </div>
+    </body>
+    <script src="app.js"></script>
+</html>
