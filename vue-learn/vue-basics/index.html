@@ -45,6 +45,16 @@
             <br>
             <h5 v-if="showName">secret</h5>
             <button @click="showToggle">Show secret</button>
+            <br>
+            <ul>
+                <li v-for="fruit in fruits">{{ fruit }}</li>
+            </ul>
+            <br>
+            <div v-for="(empl, index) in employees">
+                <p>{{index}} - Name: {{empl.name}}</p>
+                <p>Age: {{empl.age}}</p>
+                <p>Job: {{empl.job}}</p>
+            </div>
         </div>
     </body>
     <script src="app.js"></script>
